@@ -4,7 +4,7 @@
 #
 Name     : R-epiR
 Version  : 0.9.96
-Release  : 1
+Release  : 2
 URL      : https://cran.r-project.org/src/contrib/epiR_0.9-96.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/epiR_0.9-96.tar.gz
 Summary  : Tools for the Analysis of Epidemiological Data
