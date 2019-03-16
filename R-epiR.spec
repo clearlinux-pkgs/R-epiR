@@ -4,13 +4,12 @@
 #
 Name     : R-epiR
 Version  : 0.9.99
-Release  : 8
+Release  : 9
 URL      : https://cran.r-project.org/src/contrib/epiR_0.9-99.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/epiR_0.9-99.tar.gz
 Summary  : Tools for the Analysis of Epidemiological Data
 Group    : Development/Tools
 License  : GPL-2.0+
-Requires: R-BiasedUrn
 BuildRequires : R-BiasedUrn
 BuildRequires : buildreq-R
 
@@ -25,10 +24,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1541537190
+export SOURCE_DATE_EPOCH=1552756833
 
 %install
-export SOURCE_DATE_EPOCH=1541537190
+export SOURCE_DATE_EPOCH=1552756833
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -64,8 +63,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library epiR|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  epiR || :
 
 
 %files
