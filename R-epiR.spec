@@ -4,7 +4,7 @@
 #
 Name     : R-epiR
 Version  : 1.0.14
-Release  : 24
+Release  : 25
 URL      : https://cran.r-project.org/src/contrib/epiR_1.0-14.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/epiR_1.0-14.tar.gz
 Summary  : Tools for the Analysis of Epidemiological Data
@@ -14,6 +14,7 @@ Requires: R-BiasedUrn
 Requires: R-ggplot2
 Requires: R-mapproj
 Requires: R-maptools
+Requires: R-plyr
 Requires: R-rgdal
 Requires: R-rgeos
 Requires: R-spData
@@ -22,6 +23,7 @@ BuildRequires : R-BiasedUrn
 BuildRequires : R-ggplot2
 BuildRequires : R-mapproj
 BuildRequires : R-maptools
+BuildRequires : R-plyr
 BuildRequires : R-rgdal
 BuildRequires : R-rgeos
 BuildRequires : R-spData
@@ -33,21 +35,22 @@ No detailed description available
 
 %prep
 %setup -q -c -n epiR
+cd %{_builddir}/epiR
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1584110617
+export SOURCE_DATE_EPOCH=1589761851
 
 %install
-export SOURCE_DATE_EPOCH=1584110617
+export SOURCE_DATE_EPOCH=1589761851
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib

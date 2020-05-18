@@ -2,6 +2,7 @@
 R-ggplot2
 R-mapproj
 R-maptools
+R-plyr
 R-rgdal
 R-rgeos
 R-spData
