@@ -4,7 +4,7 @@
 #
 Name     : R-epiR
 Version  : 2.0.58
-Release  : 68
+Release  : 69
 URL      : https://cran.r-project.org/src/contrib/epiR_2.0.58.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/epiR_2.0.58.tar.gz
 Summary  : Tools for the Analysis of Epidemiological Data
@@ -25,9 +25,6 @@ BuildRequires : R-pander
 BuildRequires : R-sf
 BuildRequires : R-zoo
 BuildRequires : buildreq-R
-# Suppress stripping binaries
-%define __strip /bin/true
-%define debug_package %{nil}
 
 %description
 No detailed description available
@@ -41,10 +38,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1678289404
+export SOURCE_DATE_EPOCH=1678817649
 
 %install
-export SOURCE_DATE_EPOCH=1678289404
+export SOURCE_DATE_EPOCH=1678817649
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
