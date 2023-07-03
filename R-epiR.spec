@@ -4,10 +4,10 @@
 # Using build pattern: R
 #
 Name     : R-epiR
-Version  : 2.0.61
-Release  : 75
-URL      : https://cran.r-project.org/src/contrib/epiR_2.0.61.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/epiR_2.0.61.tar.gz
+Version  : 2.0.62
+Release  : 76
+URL      : https://cran.r-project.org/src/contrib/epiR_2.0.62.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/epiR_2.0.62.tar.gz
 Summary  : Tools for the Analysis of Epidemiological Data
 Group    : Development/Tools
 License  : GPL-2.0+
@@ -41,10 +41,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1684428323
+export SOURCE_DATE_EPOCH=1688414327
 
 %install
-export SOURCE_DATE_EPOCH=1684428323
+export SOURCE_DATE_EPOCH=1688414327
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
