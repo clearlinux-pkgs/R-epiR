@@ -1,3 +1,52 @@
+CHANGES IN epiR VERSION 2.0.74
+SIGNIFICANT USER-VISIBLE CHANGES
+
+    o Arguments for epi.betabuster changed to make the function more user friendly. Results of epi.betabuster include a statement of the input arguments for the function.
+    [Suggested by Mark Stevenson]
+    
+
+CHANGES IN epiR VERSION 2.0.73
+SIGNIFICANT USER-VISIBLE CHANGES
+
+    o Example for function epi.edr improved. Now includes ggplot2 code to superimpose a log2 transformed EDR over an epidemic curve.
+    [Suggested by Mark Stevenson]
+
+
+CHANGES IN epiR VERSION 2.0.72
+SIGNIFICANT USER-VISIBLE CHANGES
+
+    o Edits to the documentation for epi.2by2.
+    [Spotted by Mark Stevenson]
+
+
+CHANGES IN epiR VERSION 2.0.71
+SIGNIFICANT USER-VISIBLE CHANGES
+
+    o Further edits to improve the interpretative statements in epi.2by2.
+    [Spotted by Mark Stevenson]
+    
+    
+CHANGES IN epiR VERSION 2.0.70
+SIGNIFICANT USER-VISIBLE CHANGES
+
+    o Improved the interpretative statements in epi.2by2.
+    [Spotted by Mark Stevenson]
+    
+
+CHANGES IN epiR VERSION 2.0.68
+SIGNIFICANT USER-VISIBLE CHANGES
+
+    o Documentation error in epi.interaction corrected.
+    [Spotted by Edgar Ortiz Brizuela]
+    
+
+CHANGES IN epiR VERSION 2.0.67
+SIGNIFICANT USER-VISIBLE CHANGES
+
+    o Updates and edits to the vignettes.
+    [Suggested by Mark Stevenson]
+
+
 CHANGES IN epiR VERSION 2.0.65
 SIGNIFICANT USER-VISIBLE CHANGES
 
