@@ -1,5 +1,5 @@
 PKG_NAME := R-epiR
-URL = https://cran.r-project.org/src/contrib/epiR_2.0.76.tar.gz
+URL = https://ftp.osuosl.org/pub/cran/src/contrib/epiR_2.0.77.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
